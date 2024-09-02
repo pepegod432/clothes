@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+	<div id='info_section'>
+		{% for data in data %}
+			<section style="display: inline-block;">
+				<p style="text-align: center;">{{ data[0] }}</p>
+				<img src="{{ data.precio }} " width=200px />
+			</section>
+		{% endfor %}
+	</div>
+
+  </body>
+</html>
